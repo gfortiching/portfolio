@@ -1,0 +1,67 @@
+/* Layout and Design */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.main {
+    min-height: 100vh;
+    width: 100%;
+    padding: 5%;
+    margin: 0;
+    background-color:#252934;
+    color: white;
+}
+
+@media all and (min-width: 768px) and (max-width: 992px) {
+    .main {
+        padding: 5%;
+    }
+}
+
+
+@media all and (max-width: 768px) {
+    .main {
+        padding: 3%;
+    }
+}
+
+.theme {
+    float: right;
+    position: sticky;
+    top: 93%;
+    right: 2%;
+    z-index: 999;
+    margin-top: auto;
+}
+
+/* Font Family */
+
+.primary {
+    font-family: 'Arvo', serif;
+}
+
+.secondary {
+    font-family: 'Lato', sans-serif;
+}
+
+/* Scroll Down Arrow */
+
+.keepScrolling {
+    position: absolute;
+    top: 80%;
+    margin: auto;
+    cursor: pointer;
+}
+
+.arrowScrolling {
+    width: 30px;
+    height: 30px;
+}
+
+.arrowScrolling:hover {
+    -webkit-animation: heartbeat 1s ease-in-out infinite both;
+    animation: heartbeat 1s ease-in-out infinite both;
+}

@@ -1,0 +1,23 @@
+/* Props */
+
+.major-header {
+    display: inline-block;
+    width: auto;
+    padding: 0.5em 1em;
+    margin: 4vh 0 0;
+}
+
+.major-header p {
+    font-size: 36px;
+}
+
+@media all and (max-width: 768px) {
+
+    .major-header {
+        margin: 8vh 0 0;
+    }
+    
+    .major-header p {
+        font-size: 24px;
+    }
+}

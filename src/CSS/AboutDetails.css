@@ -1,0 +1,276 @@
+* {
+    box-sizing: border-courses;
+    padding: 0;
+    margin: 0;
+}
+  
+  /* Details */
+  
+  .details, 
+  .courses,
+  .technical-skills,
+  .soft-skills {
+    min-height: 100vh;
+    width: 80vw;
+    margin: 10% auto;
+    border-radius: 1em;
+}
+  
+  .details h1,
+  .courses h1,
+  .technical-skills h1,
+  .soft-skills h1 {
+    font-size: 32px;
+    position: sticky;
+    top: 15%;
+    bottom: 10%;
+    text-transform: uppercase;
+    margin: 1em auto;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+  
+  .details:nth-of-type(1) .summary, 
+  .details:nth-of-type(2) .summary, 
+  .details:nth-of-type(3) .summary {
+    height: auto;
+    width: 70%;
+    object-fit: contain;
+    margin-left: auto;
+    margin-bottom: 5%;
+    padding: 5%;
+    border-radius: 1em;
+    background-image: linear-gradient(to left top, #77a1d963, #2f79a4);
+}
+  
+  .details:nth-of-type(1) .summary h4, 
+  .details:nth-of-type(2) .summary h4, 
+  .details:nth-of-type(3) .summary h4 {
+    font-weight: 800;
+}
+  
+  .details:nth-of-type(1) .summary p, 
+  .details:nth-of-type(2) .summary p, 
+  .details:nth-of-type(3) .summary p {
+    font-size: 16px;
+    font-weight: 700;
+    color: inherit;
+}
+  
+  /* Courses and Soft Skils */
+  
+  .courses .summary,
+  .technical-skills .summary {
+    background-color: transparent;
+}
+  
+  .courses .summary,
+  .technical-skills .summary  {
+    min-height: 100vh;
+    padding: 0;
+}
+  
+  /* Course */
+  
+  .course {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 3%;
+    border-radius: 1em;
+    height: auto;
+    width: auto;
+    width: 70%;
+    border-radius: 1em;
+    margin-left: auto;
+    margin-bottom: 5%;
+    object-fit: contain;
+    background-image: linear-gradient(to left top, #77a1d963, #2f79a4);
+}
+  
+  .course img {
+    display: block;
+    width: 120px;
+    aspect-ratio: 2/1;
+    height: auto;
+    object-fit: contain;
+    padding: 2%;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 1em;
+}
+  
+  .course a {
+    color: inherit;
+    text-decoration: none;
+}
+  
+  .course p {
+    font-size: 20px;
+}
+  
+  /* Soft Skills */
+  
+  .skill {
+    display: grid;
+    grid: "one two" auto "three three" auto "four five" auto "six six" auto;
+    height: auto;
+    width: 70%;
+    margin-left: auto;
+    position: sticky;
+    top: 20%;
+}
+  
+  .skill span {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 5%;
+}
+  
+  .skill img {
+    width: 80px;
+    aspect-ratio: 2/1;
+    height: auto;
+    object-fit: contain;
+}
+  
+  .skill p {
+    font-size: 20px;
+    margin-left: 10px;
+    white-space: nowrap;
+}
+  
+  .skill span:nth-child(1) {
+    grid-area: one;
+    justify-content: center;
+}
+  
+  .skill span:nth-child(2) {
+    grid-area: two;
+    justify-content: center;
+}
+  
+  .skill span:nth-child(3) {
+    grid-area: three;
+    justify-content: center;
+}
+  
+  .skill span:nth-child(4) {
+    grid-area: four;
+    justify-content: center;
+}
+  
+  .skill span:nth-child(5) {
+    grid-area: five;
+    justify-content: center;
+}
+  
+  .skill span:nth-child(6) {
+    grid-area: six;
+    justify-content: center;
+}
+  
+  @media all and (min-width: 769px) and (max-width: 1200px) {
+    .details:nth-of-type(1) .summary, 
+    .details:nth-of-type(2) .summary, 
+    .details:nth-of-type(3) .summary {
+      width: 60%;
+}
+}
+  
+  @media all and (max-width: 992px) {
+    .details h1 {
+      font-size: 24px;
+}
+}
+  
+  
+  @media all and (max-width: 768px) {
+  
+    .details h1,
+    .courses h1,
+    .technical-skills h1,
+    .soft-skills h1 {
+      position: static;
+      margin: 2em 1em;
+}
+  
+    .courses .summary, 
+    .technical-skills .summary,
+    .soft-skills .summary {
+      min-height: 100vh;
+      width: 100%;
+      padding: 5%;
+}
+  
+    .details:nth-of-type(1) .summary, 
+    .details:nth-of-type(2) .summary, 
+    .details:nth-of-type(3) .summary {
+      padding: 10%;
+      height: auto;
+      width: auto;
+}
+  
+    .course {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 100%;
+      padding: 2em;
+      margin: 5% auto;
+}
+  
+    .course img {
+      width: 100px;
+}
+  
+    .skill {
+      margin: auto;
+}
+}
+  
+  @media all and (max-width: 576px) {
+  
+    .details:nth-of-type(1) .summary, 
+    .details:nth-of-type(2) .summary, 
+    .details:nth-of-type(3) .summary {
+      text-align: center;
+}
+  
+    .details h1,
+    .courses h1,
+    .technical-skills h1,
+    .soft-skills h1 {
+      position: static;
+      text-align: center;
+}
+  
+    .courses .course {    
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+}
+  
+    .course p {
+      font-size: 18px;
+      margin: 5% auto;
+      text-align: center;
+}
+  
+    .skill span {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      margin: 10%;
+}
+  
+    .skill {
+      margin: auto;
+      grid: "one" auto "two" auto "three" auto "four" auto "five" auto "six" auto;
+}
+  
+    .skill p {
+      margin: 5%;
+}
+}
