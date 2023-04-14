@@ -1,12 +1,10 @@
 import { useRef } from 'react';
 import React from "react";
-import Portrait from "../Images/meBlack.jpg"
+import Portrait from "../Images/meBlack.jpg";
 import "../Functions/AnimateOnScroll";
-import "../CSS/About.css"
-import Coursera from "../Images/Coursera.png"
-import FreeCodeCamp from "../Images/fCC.png"
+import "../CSS/About.css";
 import Header from './Props/Header';
-import Kodego from "../Images/KodeGo.png"
+import Kodego from "../Images/KodeGo.png";
 
 function AboutMe() {
 
@@ -30,13 +28,13 @@ function AboutMe() {
     const reactjs = 'https://cdn-icons-png.flaticon.com/512/1126/1126012.png';
     const php = 'https://www.php.net//images/logos/new-php-logo.svg';
 
-    const links = {
-      google_pm: 'https://www.coursera.org/professional-certificates/google-project-management',
-      google_ux: 'https://www.coursera.org/learn/foundations-user-experience-design',
-      web_design: 'https://www.freecodecamp.org/learn/2022/responsive-web-design/',
-      js_algorithm: 'https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/',
-      front_end: 'https://www.freecodecamp.org/learn/front-end-development-libraries/'
-    }
+    // const links = {
+    //   google_pm: 'https://www.coursera.org/professional-certificates/google-project-management',
+    //   google_ux: 'https://www.coursera.org/learn/foundations-user-experience-design',
+    //   web_design: 'https://www.freecodecamp.org/learn/2022/responsive-web-design/',
+    //   js_algorithm: 'https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/',
+    //   front_end: 'https://www.freecodecamp.org/learn/front-end-development-libraries/'
+    // }
 
     
     const details = useRef(null);
@@ -195,29 +193,29 @@ function AboutMe() {
         <DetailsTitle header="Courses" />
         <div className="summary">
             <Course 
-                link={links.google_pm} 
+                link={null} 
                 course="Google Project Management"
-                image={Coursera} />
+                image={null} />
 
             <Course 
-                link={links.google_ux} 
+                link={null} 
                 course="Google UX Design"
-                image={Coursera} />
+                image={null} />
 
             <Course 
-                link={links.web_design} 
+                link={null} 
                 course="Responsive Web Design"
-                image={FreeCodeCamp} />
+                image={null} />
 
             <Course
-                link={links.js_algorithm} 
+                link={null} 
                 course="JavaScript Algorithms and Data Structures"
-                image={FreeCodeCamp} />
+                image={null} />
 
             <Course
-                link={links.front_end} 
+                link={null} 
                 course="Front End Development Libraries"
-                image={FreeCodeCamp} />
+                image={null} />
         </div>
       </article>
 
