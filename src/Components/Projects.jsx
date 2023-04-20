@@ -4,7 +4,6 @@ import RootsAndTools from "../Images/MP1.png"
 import LittleWizards from "../Images/MP2.png"
 import Portfolio from "../Images/Portfolio.png"
 import Capstone from "../Images/Capstone.png"
-import Kodego from "../Images/KodeGo.png"
 import Arrow from "../Images/arrow.png";
 // import Extras from './Extras';
 import Scroll from '../Functions/Scroll';

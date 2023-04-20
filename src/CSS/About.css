@@ -8,8 +8,8 @@
 }
 
 .blackPortrait {
-    height: 75vh;
-    max-width: 90vw;
+    height: 70vh;
+    max-width: 80vw;
     margin-top: 15%;
     margin-bottom: auto;
     margin-right: 1%;
@@ -23,14 +23,14 @@
 }
 
 .good-day {
-  margin-top: 7%;
+  margin-top: 50px;
 }
 
 .squares {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  margin: 5% auto;
+  margin: 10% auto;
   text-align: center;
 }
 

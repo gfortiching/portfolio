@@ -2,12 +2,9 @@ import React, { useRef, useState } from "react";
 import Intro from "./Components/Intro";
 import Projects from "./Components/Projects";
 import About from "./Components/About";
-// import Contact from "./Components/Contact";
-// import ContactUs from "./Components/Email";
-// import Footer from "./Components/Footer";
-// import Drawer from '@mui/material/Drawer';
-// import Button from '@mui/material/Button';
-// import DashboardIcon from '@mui/icons-material/Dashboard';
+import Contact from "./Components/Contact";
+import Email from "./Components/Email";
+import Footer from "./Components/Footer";
 import Scroll from "./Functions/Scroll";
 // import Switch from "./Functions/Switch";
 import Logo from "./Images/logo.png";
@@ -20,6 +17,7 @@ function App() {
   const projects = useRef(null);
   const about = useRef(null);
   const contact = useRef(null);
+  const email = useRef(null);
   
   function Navbar () {
 
@@ -91,6 +89,9 @@ function App() {
         <Navbar />
         <div ref={projects}><Projects /></div>
         <div ref={about}><About /></div>
+        <div ref={contact}><Contact /></div>
+        <div ref={email}><Email /></div>
+        <div><Footer /></div>
       </main> 
     </>
   )

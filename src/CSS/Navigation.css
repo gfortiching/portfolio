@@ -63,6 +63,7 @@
     .nav-menu {
         display: flex;
         flex-direction: column;
+        min-width: 300px;
         width: 30%;
         height: 100vh;
         position: absolute;

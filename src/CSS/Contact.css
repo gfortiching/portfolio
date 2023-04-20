@@ -1,0 +1,34 @@
+.contactContainer {
+    min-height: 60vh;
+    width: 100%;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.contactContainer span {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 5%;
+}
+
+.child {
+    min-width: 300px;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    flex: 1;
+    margin: 15px;
+    border-radius: 1em;
+    background-image: linear-gradient(to left top, #77a1d963, #2f79a4);
+}
+
+.child img {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+}

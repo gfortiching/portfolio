@@ -4,7 +4,11 @@ import Portrait from "../Images/meBlack.jpg";
 import "../Functions/AnimateOnScroll";
 import "../CSS/About.css";
 import Header from './Props/Header';
-import Kodego from "../Images/KodeGo.png";
+import GoogleUX from '../Images/Google-UX.png';
+import GooglePM from '../Images/Google-Project-Management.png';
+import FullStack from '../Images/Full-Stack.png';
+import RedHatLinux from '../Images/Red-Hat-Linux.png';
+import Scrum from '../Images/Introduction-to-Scrum-Master-Training.png';
 
 function AboutMe() {
 
@@ -28,20 +32,12 @@ function AboutMe() {
     const reactjs = 'https://cdn-icons-png.flaticon.com/512/1126/1126012.png';
     const php = 'https://www.php.net//images/logos/new-php-logo.svg';
 
-    // const links = {
-    //   google_pm: 'https://www.coursera.org/professional-certificates/google-project-management',
-    //   google_ux: 'https://www.coursera.org/learn/foundations-user-experience-design',
-    //   web_design: 'https://www.freecodecamp.org/learn/2022/responsive-web-design/',
-    //   js_algorithm: 'https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/',
-    //   front_end: 'https://www.freecodecamp.org/learn/front-end-development-libraries/'
-    // }
-
     
     const details = useRef(null);
 
-    function DetailsTitle(props) {
+    function Title(props) {
       return (
-        <h1 className="primary" data-aos="fade-right">{props.header}</h1>
+        <h1 className="primary title" data-aos="fade-right">{props.header}</h1>
       )
     }
 
@@ -53,17 +49,6 @@ function AboutMe() {
                 <p className="secondary">{props.date}</p>
             </div>
       )
-    }
-
-    function Course(props) {
-        return (
-            <div className="course" data-aos="fade-up">
-                <a href={props.link} target="blank">
-                <p>{props.course}</p>
-                </a>
-                <img src={props.image} loading="lazy" alt="" />
-            </div>
-        )
     }
 
     function Skill(props) {
@@ -83,13 +68,21 @@ function AboutMe() {
         )
     }
 
+    function Certificate(props) {
+      return (
+          <div className="certificate" data-aos="fade-up">
+              <img src={props.image} loading="lazy" alt="" />
+          </div>
+      )
+    }
+
     return (
     <>
     <main className="aboutContainer main">
       <section className="header">
         <Header header="About"/>
           <div className="good-day primary p-1 px-sm-5" data-aos="fade-up">  
-            <h2>Good Day!<img loading="lazy" src={waveIcon} alt="Code" className='icons' /></h2>
+            <h2>Hey there!<img loading="lazy" src={waveIcon} alt="Code" className='icons' /></h2>
             <h2>I'm Jose Gabriel F. Fabileña. <img loading="lazy" src={personIcon} alt="Code" className='icons' /></h2>
             <div className='squares'>
               <div className='square'>
@@ -129,21 +122,19 @@ function AboutMe() {
             <br />
             <br />
             My interests in Cryptocurrencies, NFTs, Trading and Financial Technology led me to start learning how to code.
-            I realized I was practicing everyday. 
-            So, I decided to pursue and consider a career in coding <img loading="lazy" src={codingIcon} alt="Code" className='icons' />.
+            As I was practicing coding everyday, I decided to pursue a career in coding <img loading="lazy" src={codingIcon} alt="Code" className='icons' />.
             <br />
             <br />
-            After two weeks of self-studying and researching, I applied and enrolled as a Full-Stack Web Development student at KodeGo <img loading="lazy" src={Kodego} alt="Code" className='icons' /> and joined my first online class last September 30, 2022. 
+            After two weeks of self-studying and researching, I enrolled at KodeGo's as a Full-Stack Web Development course and joined my first online coding class last September 30, 2022. 
         </p>
       </article>
     </section>
     </main>
-    
 
     <main ref={details} className="main">
       
-      <article className="details">
-        <DetailsTitle header="Education" />
+      <article className="education">
+        <Title header="Education" />
 
         <Details 
           level="Kinder and Elementary"
@@ -161,8 +152,8 @@ function AboutMe() {
           date="June 2015 - March 2020"/>
       </article>      
       
-      <article className="details">
-        <DetailsTitle header="Experiences" />
+      <article className="experience">
+        <Title header="Experiences" />
 
         <Details 
           level="ESL Teacher"
@@ -180,47 +171,36 @@ function AboutMe() {
           date="June 2022 - Present" />
       </article>
 
-      <article className="details">
-        <DetailsTitle header="Bootcamps" />
-
+      <article className="bootcamp">
+        <Title header="Bootcamps" />
         <Details 
           level="Full-Stack Web Development"
           company="KodeGo"
           date="September 30, 2022 - January 2023"/>
       </article>
 
-      <article className="courses">
-        <DetailsTitle header="Courses" />
+      <article className="certificates">
+        <Title header="Certificates" />
         <div className="summary">
-            <Course 
-                link={null} 
-                course="Google Project Management"
-                image={null} />
+            <Certificate 
+                image={FullStack} />
 
-            <Course 
-                link={null} 
-                course="Google UX Design"
-                image={null} />
+            <Certificate
+                image={RedHatLinux} />
 
-            <Course 
-                link={null} 
-                course="Responsive Web Design"
-                image={null} />
+            <Certificate 
+                image={GoogleUX} />
 
-            <Course
-                link={null} 
-                course="JavaScript Algorithms and Data Structures"
-                image={null} />
+            <Certificate 
+                image={GooglePM} />
 
-            <Course
-                link={null} 
-                course="Front End Development Libraries"
-                image={null} />
+            <Certificate
+                image={Scrum} />
         </div>
       </article>
 
-      <article className="technical-skills">
-        <DetailsTitle header="Languages" />
+      <article className="tech-skills">
+        <Title header="Tech Skills" />
         <div className="summary">
           <div className="skill">
 
@@ -253,7 +233,7 @@ function AboutMe() {
       </article>
 
       <article className="soft-skills">
-        <DetailsTitle header="Soft Skills" />
+        <Title header="Soft Skills" />
         <div className="summary">
           <div className="skill">
             <Soft

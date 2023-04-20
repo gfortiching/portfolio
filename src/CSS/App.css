@@ -11,13 +11,13 @@
     width: 100%;
     padding: 5%;
     margin: 0;
-    background-color:#252934;
+    background-color:#363b4c;
     color: white;
 }
 
 @media all and (min-width: 768px) and (max-width: 992px) {
     .main {
-        padding: 5%;
+        padding: 3%;
     }
 }
 

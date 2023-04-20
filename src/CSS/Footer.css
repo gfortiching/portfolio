@@ -1,0 +1,78 @@
+@import "./Links.css";
+
+.footer {
+    background-color:#363b4c;
+    color: white;
+    height: auto;
+    padding: 5%;
+}
+
+.footer-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-to-top {
+    height: auto;
+    background-image: linear-gradient(to left top, #77a1d963, #2f79a4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-to-top p {
+    font-size: 5vw;
+    margin: 5% auto;
+}
+
+.back-to-top p:hover {
+    color: rgb(75, 159, 255);
+    cursor: pointer;
+}
+
+/* Skills Animation */
+
+.infinite-animation {
+    height: 10vh;
+    overflow: hidden;
+    position: relative;
+    background-color:#363b4c;
+    color: white;
+}
+
+.link-animation {
+    height: 10vh;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: move-rtl 25s linear infinite;
+    overflow: hidden;
+}
+      
+.link-animation h1 {
+    font-size: 1em;
+    font-weight: bold;
+    padding: 0 2rem;
+    white-space: nowrap;
+    text-transform: uppercase;
+    z-index: 999;
+}
+      
+@keyframes move-rtl {
+    0% {
+    transform: translateX(100%);
+}
+      
+    100% {
+    transform: translateX(-100%);
+}
+}
+
+.icons {
+    width: 35px;
+    height: 35px;
+    margin: 0 10px 10px;
+}
