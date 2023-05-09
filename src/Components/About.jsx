@@ -3,12 +3,14 @@ import React from "react";
 import Portrait from "../Images/meBlack.jpg";
 import "../Functions/AnimateOnScroll";
 import "../CSS/About.css";
-import Header from './Props/Header';
+import Section from './Props/Section';
 import GoogleUX from '../Images/Google-UX.png';
 import GooglePM from '../Images/Google-Project-Management.png';
 import FullStack from '../Images/Full-Stack.png';
 import RedHatLinux from '../Images/Red-Hat-Linux.png';
 import Scrum from '../Images/Introduction-to-Scrum-Master-Training.png';
+import Duda from '../Images/Duda-Web-Design.png';
+import ResponsiveWebDesign from '../Images/Responsive-Web-Design.png';
 
 function AboutMe() {
 
@@ -78,9 +80,9 @@ function AboutMe() {
 
     return (
     <>
-    <main className="aboutContainer main">
+    <main className="about-container main">
       <section className="header">
-        <Header header="About"/>
+        <Section section="About"/>
           <div className="good-day primary p-1 px-sm-5" data-aos="fade-up">  
             <h2>Hey there!<img loading="lazy" src={waveIcon} alt="Code" className='icons' /></h2>
             <h2>I'm Jose Gabriel F. Fabileña. <img loading="lazy" src={personIcon} alt="Code" className='icons' /></h2>
@@ -101,9 +103,9 @@ function AboutMe() {
           </div>
       </section>
       
-    <img loading="lazy" className='blackPortrait' src={Portrait} alt='' data-aos="zoom-in" />
+    <img loading="lazy" className='black-portrait' src={Portrait} alt='' data-aos="zoom-in" />
 
-    <section className="aboutContainer">
+    <section className="about-container">
       <article className='about-text-container'>
         <h1 className='mb-5 primary' data-aos="fade-right">Overview <img loading="lazy" src={overviewIcon} alt="Code" className='icons' /></h1>
         <p className='about-text secondary' data-aos="fade-right">
@@ -125,7 +127,7 @@ function AboutMe() {
             As I was practicing coding everyday, I decided to pursue a career in coding <img loading="lazy" src={codingIcon} alt="Code" className='icons' />.
             <br />
             <br />
-            After two weeks of self-studying and researching, I enrolled at KodeGo's as a Full-Stack Web Development course and joined my first online coding class last September 30, 2022. 
+            After two weeks of self-studying and researching, I enrolled in KodeGo's Full-Stack Web Development course and joined my first online coding class last September 30, 2022. 
         </p>
       </article>
     </section>
@@ -196,6 +198,12 @@ function AboutMe() {
 
             <Certificate
                 image={Scrum} />
+
+            <Certificate
+                image={Duda} />
+
+            <Certificate
+                image={ResponsiveWebDesign} />
         </div>
       </article>
 

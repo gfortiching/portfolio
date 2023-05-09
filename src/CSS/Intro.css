@@ -1,4 +1,4 @@
-.introMain {
+.intro-main {
     -webkit-animation: color-change-2x 2s linear infinite alternate both;
     animation: color-change-2x 2s linear infinite alternate both;
     display: flex;
@@ -224,7 +224,7 @@
   
   @media all and (min-width: 576px) and (max-width: 800px) {
 
-    .introMain {
+    .intro-main {
       height: 100vh;
       padding: 20px;
       margin: auto;
@@ -269,7 +269,7 @@
 
   @media all and (max-width: 576px) {
 
-    .introMain {
+    .intro-main {
       height: 100vh;
       padding: 1em;
       margin: auto;

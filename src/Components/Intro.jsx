@@ -23,7 +23,7 @@ function Intro() {
 
         return (
         <>
-        <section className="animation secondary">
+        <div className="animation secondary">
             <h1>HTML</h1>
             <h1>CSS</h1>
             <h1>BOOTSTRAP</h1>
@@ -31,16 +31,16 @@ function Intro() {
             <h1>Git</h1>
             <h1>Github</h1>
             <h1>REACT JS</h1>
-        </section>
+        </div>
         </>
     )
     }
 
     return (
     <>
-    <main className="introMain">
+    <header className="intro-main">
     <Skills />
-    <section className="intro">
+    <div className="intro">
         <div className="left">
             <div className="left-wrapper">
                 <h1 className="greet primary">Hey! &#128075;</h1>
@@ -52,9 +52,9 @@ function Intro() {
             <img src={Me} alt="" className="myImg" />
         </div>
         <GetToKnow />
-    </section>
-    </main>
-    <section ref={next}></section>
+    </div>
+    </header>
+    <div ref={next}></div>
     </>
 
 )};

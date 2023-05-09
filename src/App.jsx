@@ -17,7 +17,7 @@ function App() {
   const projects = useRef(null);
   const about = useRef(null);
   const contact = useRef(null);
-  const email = useRef(null);
+//   const email = useRef(null);
   
   function Navbar () {
 
@@ -85,14 +85,12 @@ function App() {
   return (
     <>
       <div ref={home}><Intro /></div>
-      <main>
         <Navbar />
-        <div ref={projects}><Projects /></div>
-        <div ref={about}><About /></div>
-        <div ref={contact}><Contact /></div>
-        <div ref={email}><Email /></div>
-        <div><Footer /></div>
-      </main> 
+        <section ref={projects}><Projects /></section>
+        <section ref={about}><About /></section>
+        <section ref={contact}><Contact /></section>
+        <section><Email /></section>
+        <section><Footer /></section>
     </>
   )
 }

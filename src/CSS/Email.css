@@ -1,13 +1,13 @@
 .email {
-    padding: 0 5% 10%;
+    padding: 0;
 }
 
 .form {
     max-width: 500px;
-    margin: auto;
-    background-color: #34729A;
+    margin: 0 auto 100px;
+    background-image: linear-gradient(to left top, #5175a463, #2f79a4);
     box-shadow: 5px 5px 15px rgb(0, 0, 0);
-    padding: 50px;
+    padding: 40px;
     border-radius: 10px;
 }
 

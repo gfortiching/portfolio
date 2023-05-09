@@ -1,16 +1,16 @@
 import "../CSS/Contact.css";
-import Header from './Props/Header';
+import Section from './Props/Section';
 
 export default function Contact() {
 
     return (
     <>
     <section className="main">
-        <Header header="Contact" />
+        <Section section="Contact" />
         <br />
-        <div className="contactContainer primary">
+        <div className="contactContainer">
         <h4 className="primary text-center" data-aos="fade-up">Get In Touch!</h4>
-            <span>
+            <span className="secondary">
                 <div className="child" data-aos="fade-up">
                     <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Gmail" />
                     <p className="mt-3">gabrielfabilena@gmail.com</p>

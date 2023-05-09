@@ -1,7 +1,7 @@
-@import "./Links.css";
+@import "./Social_Links.css";
 
 .footer {
-    background-color:#363b4c;
+    background-color:#222633;
     color: white;
     height: auto;
     padding: 5%;
@@ -32,13 +32,19 @@
     cursor: pointer;
 }
 
+/* Duda Badge */
+
+.duda-university-badge {
+    margin-top: 50px;
+}
+
 /* Skills Animation */
 
 .infinite-animation {
     height: 10vh;
     overflow: hidden;
     position: relative;
-    background-color:#363b4c;
+    background-color:#4f5569;
     color: white;
 }
 

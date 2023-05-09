@@ -25,6 +25,7 @@
     margin: 15px;
     border-radius: 1em;
     background-image: linear-gradient(to left top, #77a1d963, #2f79a4);
+    box-shadow: 5px 5px 5px black;
 }
 
 .child img {
