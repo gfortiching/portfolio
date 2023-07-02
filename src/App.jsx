@@ -2,12 +2,12 @@ import React, { useRef, useState } from "react";
 import Intro from "./Components/Intro";
 import Projects from "./Components/Projects";
 import About from "./Components/About";
-import Contact from "./Components/Contact";
+// import Contact from "./Components/Contact";
 import Email from "./Components/Email";
 import Footer from "./Components/Footer";
 import Scroll from "./Functions/Scroll";
 // import Switch from "./Functions/Switch";
-import Logo from "./Images/logo.png";
+// import Logo from "./Images/logo.png";
 import "./CSS/App.css";
 import "./CSS/Navigation.css"
 
@@ -24,7 +24,7 @@ function App() {
     const MenuItems = [
   
       {
-          title: <img className="nav-logo" src={Logo} />,
+          title: <p className="primary">Gab.Fabileña</p>,
           ref: home,
           cName: 'nav-links'
       },
@@ -88,8 +88,8 @@ function App() {
         <Navbar />
         <section ref={projects}><Projects /></section>
         <section ref={about}><About /></section>
-        <section ref={contact}><Contact /></section>
-        <section><Email /></section>
+        {/* <section ref={contact}><Contact /></section> */}
+        <section ref={contact}><Email /></section>
         <section><Footer /></section>
     </>
   )

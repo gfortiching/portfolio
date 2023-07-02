@@ -158,6 +158,11 @@ function AboutMe() {
         <Title header="Experiences" />
 
         <Details 
+          level="Junior Web Developer"
+          company="Bullsai"
+          date="May 2023 - Present" />
+
+        <Details 
           level="ESL Teacher"
           company="Inspiro, Relia Inc. Dumaguete"
           date="April 2019 - June 2019, June 2020 - March 2021" />
