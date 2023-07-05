@@ -86,20 +86,6 @@ function AboutMe() {
           <div className="good-day primary p-1 px-sm-5" data-aos="fade-up">  
             <h2>Hey there!<img loading="lazy" src={waveIcon} alt="Code" className='icons' /></h2>
             <h2>I'm Jose Gabriel F. Fabileña. <img loading="lazy" src={personIcon} alt="Code" className='icons' /></h2>
-            <div className='squares'>
-              <div className='square'>
-                <img loading="lazy" src={trustworthy} alt="" />
-                <p>Trustworthy</p>
-              </div>
-              <div className='square'>
-                <img loading="lazy" src={persistent} alt="" />
-                <p>Persistent</p>
-              </div>
-              <div className='square'>
-                <img loading="lazy" src={diligent} alt="" />
-                <p>Diligent</p>
-              </div>
-            </div>
           </div>
       </section>
       
@@ -139,9 +125,9 @@ function AboutMe() {
         <Title header="Education" />
 
         <Details 
-          level="Kinder and Elementary"
-          company="St. Paul University Dumaguete"
-          date="June 2003 - March 2011"/>
+          level="Bachelor of Science in Mathematics"
+          company="Silliman University, Dumaguete"
+          date="June 2015 - March 2020"/>
 
         <Details 
           level="High School"
@@ -149,9 +135,10 @@ function AboutMe() {
           date="June 2011 - March 2015"/>
 
         <Details 
-          level="Bachelor of Science in Mathematics"
-          company="Silliman University, Dumaguete"
-          date="June 2015 - March 2020"/>
+          level="Kinder and Elementary"
+          company="St. Paul University Dumaguete"
+          date="June 2003 - March 2011"/>
+
       </article>      
       
       <article className="experience">
@@ -162,20 +149,21 @@ function AboutMe() {
           company="Bullsai"
           date="May 2023 - Present" />
 
-        <Details 
-          level="ESL Teacher"
-          company="Inspiro, Relia Inc. Dumaguete"
-          date="April 2019 - June 2019, June 2020 - March 2021" />
+        <Details
+          level="Freelance Tutor"
+          company="Course Hero"
+          date="June 2022 - Present" />
 
         <Details
           level="Financial Advisor"
           company="The Insular Life Assurance Co Ltd."
           date="August 2020 - December 2022" />
 
-        <Details
-          level="Freelance Tutor"
-          company="Course Hero"
-          date="June 2022 - Present" />
+        <Details 
+          level="ESL Teacher"
+          company="Inspiro, Relia Inc. Dumaguete"
+          date="April 2019 - June 2019, June 2020 - March 2021" />
+
       </article>
 
       <article className="bootcamp">
