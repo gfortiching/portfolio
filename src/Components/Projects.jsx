@@ -3,7 +3,6 @@ import "../CSS/Projects.css";
 import RootsAndTools from "../Images/MP1.png"
 import LittleWizards from "../Images/MP2.png"
 import Portfolio from "../Images/Portfolio.png"
-import Capstone from "../Images/Capstone.png"
 import Arrow from "../Images/arrow.png";
 import Scroll from '../Functions/Scroll';
 import AnimateOnScroll from "../Functions/AnimateOnScroll";
@@ -27,9 +26,11 @@ function Projects() {
               <h4 className='m-0 primary'>{props.name}</h4>
             </div>
 
-            <div className='project-link'>
-              <a href={props.anchor} target="blank">View Website &#187;</a>
-            </div>
+            <a href={props.anchor} target="blank">
+              <span className='project-link'>
+              View Website &#187;
+              </span>
+            </a>
         </div>
     )
   };
@@ -67,13 +68,6 @@ function Projects() {
             name="Little Wizards"
             description=""
             anchor="https://little-wizards.netlify.app/index.html" />
-
-          <Project 
-            image={Capstone}
-            title="Capstone"
-            name="GoToda"
-            description=""
-            anchor="'/'" />
 
           <Project 
             image={Portfolio}

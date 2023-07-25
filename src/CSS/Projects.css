@@ -60,10 +60,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
     /* position: absolute; */
     bottom: 0%;
-    width: 100%;
+    width: 250px;
+    margin: auto;
+    background-color: #1A4D7A;
+    border-radius: 20px;
+}
+
+.project-link:hover {
+    background-color: #345b7c;
+    transform: scale(1.05);
+    transition: 0.3s ease-in;
 }
   
 .project a {

@@ -11,6 +11,8 @@ import RedHatLinux from '../Images/Red-Hat-Linux.png';
 import Scrum from '../Images/Introduction-to-Scrum-Master-Training.png';
 import Duda from '../Images/Duda-Web-Design.png';
 import ResponsiveWebDesign from '../Images/Responsive-Web-Design.png';
+import DudaIcon from '../Images/duda.png';
+import Chime from '../Images/chime.png';
 
 function AboutMe() {
 
@@ -21,11 +23,7 @@ function AboutMe() {
     const softwareIcon = 'https://cdn-icons-png.flaticon.com/512/9307/9307617.png';
     const teamIcon = 'https://cdn-icons-png.flaticon.com/512/8955/8955033.png';
     const journeyIcon = 'https://cdn-icons-png.flaticon.com/512/3059/3059997.png';
-    const codingIcon = 'https://cdn-icons-png.flaticon.com/512/1005/1005141.png'
-
-    const trustworthy = 'https://cdn-icons-png.flaticon.com/512/6005/6005394.png';
-    const persistent = 'https://cdn-icons-png.flaticon.com/512/4576/4576986.png';
-    const diligent = 'https://cdn-icons-png.flaticon.com/512/2693/2693151.png';
+    const codingIcon = 'https://cdn-icons-png.flaticon.com/512/1005/1005141.png';
 
     const html = 'https://cdn-icons-png.flaticon.com/512/1051/1051277.png';
     const css = 'https://cdn-icons-png.flaticon.com/512/732/732190.png';
@@ -34,7 +32,6 @@ function AboutMe() {
     const reactjs = 'https://cdn-icons-png.flaticon.com/512/1126/1126012.png';
     const php = 'https://www.php.net//images/logos/new-php-logo.svg';
 
-    
     const details = useRef(null);
 
     function Title(props) {
@@ -228,6 +225,14 @@ function AboutMe() {
             <Skill 
                 image={php}
                 tech_stack="PHP" />
+
+            <Skill 
+                image={DudaIcon}
+                tech_stack="Duda" />
+
+            <Skill 
+                image={Chime}
+                tech_stack="Chime IDX" />
 
           </div>
         </div>
