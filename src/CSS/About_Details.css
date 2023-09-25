@@ -1,275 +1,273 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
-  
-  /* About - Details  */
-  
-  .education,
-  .experience,
-  .bootcamp, 
-  .certificates,
-  .tech-skills,
-  .soft-skills {
-    min-height: 100vh;
-    width: 90vw;
-    margin: 10% auto;
-    border-radius: 1em;
+
+/* About - Details  */
+
+.education,
+.experience,
+.bootcamp,
+.certificates,
+.tech-skills,
+.soft-skills {
+  min-height: 100vh;
+  width: 90vw;
+  margin: 10% auto;
+  border-radius: 1em;
 }
 
 /* About - h1 */
-  
-  .title {
-    font-size: 32px;
-    position: sticky;
-    top: 15%;
-    bottom: 10%;
-    text-transform: uppercase;
-    margin: 1em auto;
-    font-weight: 500;
-    letter-spacing: 3px;
+
+.title {
+  font-size: 32px;
+  position: sticky;
+  top: 15%;
+  bottom: 10%;
+  text-transform: uppercase;
+  margin: 1em auto;
+  font-weight: 500;
+  letter-spacing: 3px;
 }
 
 /* Container | Education - Experience - Bootcamp */
-  
-  .education .summary, 
-  .experience .summary, 
-  .bootcamp .summary {
-    height: auto;
-    width: 60%;
-    object-fit: contain;
-    margin-left: auto;
-    margin-bottom: 5%;
-    padding: 40px;
-    border-radius: 1em;
-    background-image: linear-gradient(to left top, #77a1d963, #2f79a4);
-    box-shadow: 5px 5px 10px black;
+
+.education .summary,
+.experience .summary,
+.bootcamp .summary {
+  height: auto;
+  width: 60%;
+  object-fit: contain;
+  margin-left: auto;
+  margin-bottom: 5%;
+  padding: 40px;
+  border-radius: 1em;
+  background-image: linear-gradient(to left top, #77a1d963, #2f79a4);
+  box-shadow: 5px 5px 10px black;
 }
-  
-  .education.summary h4, 
-  .experience .summary h4, 
-  .bootcamp .summary h4 {
-    font-weight: 800;
+
+.education.summary h4,
+.experience .summary h4,
+.bootcamp .summary h4 {
+  font-weight: 800;
 }
-  
-  .education .summary p, 
-  .experience .summary p, 
-  .bootcamp .summary p {
-    font-size: 16px;
-    font-weight: 700;
-    color: inherit;
+
+.education .summary p,
+.experience .summary p,
+.bootcamp .summary p {
+  font-size: 16px;
+  font-weight: 700;
+  color: inherit;
 }
-  
+
 /* Container | Certificates */
-  
-  .certificate {
-    padding: 0;
-    margin: auto 20px;
+
+.certificate {
+  padding: 0;
+  margin: auto 20px;
 }
-  
-  .certificate img {
-    max-width: 350px;
-    min-width: 280px;
-    height: 100%;
-    object-fit: contain;
-    padding: 0;
-    margin: 10px;
-    border: 0;
-    box-shadow: 5px 5px 10px black;
+
+.certificate img {
+  max-width: 350px;
+  min-width: 280px;
+  height: 100%;
+  object-fit: contain;
+  padding: 0;
+  margin: 10px;
+  border: 0;
+  box-shadow: 5px 5px 10px black;
 }
 
 /* Certificates Summary */
 
-  .certificates .summary {
-    width: 60%;
-    margin-left: auto;
-    background-color: transparent;
-    min-height: 100vh;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.certificates .summary {
+  width: 60%;
+  margin-left: auto;
+  background-color: transparent;
+  min-height: 100vh;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-  /* Technical Skills */
-  
-  /* Soft Skills */
-  
-  .tech-skills .summary {
-    background-color: transparent;
-    min-height: 100vh;
-    padding: 0;
-  }
+/* Technical Skills */
 
-  .skill {
-    display: grid;
-    grid: "one two" auto "three three" auto "four five" auto "six six" auto "seven eight" auto;
-    height: auto;
-    width: 70%;
-    margin-left: auto;
-    position: sticky;
-    top: 20%;
+/* Soft Skills */
+
+.tech-skills .summary {
+  background-color: transparent;
+  min-height: 100vh;
+  padding: 0;
 }
-  
-  .skill span {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 5%;
+
+.tech-skills .skill {
+  display: grid;
+  grid: "one two" auto "three three" auto "four five" auto "six six" auto "seven eight" auto;
+  height: auto;
+  width: 70%;
+  margin-left: auto;
+  position: sticky;
+  top: 20%;
 }
-  
-  .skill img {
-    width: 80px;
-    aspect-ratio: 2/1;
-    height: auto;
-    object-fit: contain;
+
+.skill span {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 5%;
 }
-  
-  .skill p {
-    font-size: 20px;
-    margin: 10px;
-    white-space: nowrap;
+
+.skill img {
+  width: 80px;
+  aspect-ratio: 2/1;
+  height: auto;
+  object-fit: contain;
 }
-  
-  .skill span:nth-child(1) {
-    grid-area: one;
-    justify-content: center;
+
+.skill p {
+  font-size: 20px;
+  margin: 10px;
+  white-space: nowrap;
 }
-  
-  .skill span:nth-child(2) {
-    grid-area: two;
-    justify-content: center;
+
+.skill span:nth-child(1) {
+  grid-area: one;
+  justify-content: center;
 }
-  
-  .skill span:nth-child(3) {
-    grid-area: three;
-    justify-content: center;
+
+.skill span:nth-child(2) {
+  grid-area: two;
+  justify-content: center;
 }
-  
-  .skill span:nth-child(4) {
-    grid-area: four;
-    justify-content: center;
+
+.skill span:nth-child(3) {
+  grid-area: three;
+  justify-content: center;
 }
-  
-  .skill span:nth-child(5) {
-    grid-area: five;
-    justify-content: center;
+
+.skill span:nth-child(4) {
+  grid-area: four;
+  justify-content: center;
 }
-  
-  .skill span:nth-child(6) {
-    grid-area: six;
-    justify-content: center;
+
+.skill span:nth-child(5) {
+  grid-area: five;
+  justify-content: center;
+}
+
+.skill span:nth-child(6) {
+  grid-area: six;
+  justify-content: center;
 }
 
 .skill span:nth-child(7) {
-    grid-area: seven;
-    justify-content: center;
+  grid-area: seven;
+  justify-content: center;
 }
 
 .skill span:nth-child(8) {
-    grid-area: eight;
+  grid-area: eight;
+  justify-content: center;
+}
+
+@media all and (min-width: 992px) and (max-width: 1200px) {
+  .education .summary,
+  .experience .summary,
+  .bootcamp .summary {
+    width: 60%;
+  }
+}
+
+@media all and (max-width: 992px) {
+  .education h1,
+  .experience h1,
+  .bootcamp h1 {
+    font-size: 24px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .education h1,
+  .experience h1,
+  .bootcamp h1,
+  .certificates h1,
+  .tech-skills h1,
+  .soft-skills h1 {
+    position: static;
+    margin: 30px 10px;
+  }
+
+  .certificates .summary,
+  .tech-skills .summary,
+  .soft-skills .summary {
+    min-height: 100vh;
+    width: 100%;
+    padding: 0;
+  }
+
+  .education .summary,
+  .experience .summary,
+  .bootcamp .summary {
+    padding: 10%;
+    height: auto;
+    width: auto;
+  }
+
+  .certificate {
+    display: flex;
     justify-content: center;
-}
-  
-  @media all and (min-width: 992px) and (max-width: 1200px) {
-    .education .summary, 
-    .experience .summary, 
-    .bootcamp .summary {
-      width: 60%;
-}
-}
-  
-  @media all and (max-width: 992px) {
-    .education h1,
-    .experience h1,
-    .bootcamp h1 {
-      font-size: 24px;
-}
-}
-  
-  @media all and (max-width: 768px) {
-  
-    .education h1,
-    .experience h1,
-    .bootcamp h1,
-    .certificates h1,
-    .tech-skills h1,
-    .soft-skills h1 {
-      position: static;
-      margin: 30px 10px;
-}
-  
-    .certificates .summary, 
-    .tech-skills .summary,
-    .soft-skills .summary {
-      min-height: 100vh;
-      width: 100%;
-      padding: 0;
-}
-  
-    .education .summary, 
-    .experience .summary, 
-    .bootcamp .summary {
-      padding: 10%;
-      height: auto;
-      width: auto;
-}
-  
-    .certificate {
-      display: flex;
-      justify-content: center;
-      flex-direction: row;
-      align-items: center;
-      padding: 10px;
-}
-  
-    .certificate img {
-      max-width: 250px;
-}
-  
-    .skill {
-      margin: auto;
-}
-}
-  
-  @media all and (max-width: 576px) {
-  
-    .education .summary, 
-    .experience .summary, 
-    .bootcamp .summary {
-      text-align: center;
-}
-  
-    .education h1,
-    .experience h1,
-    .bootcamp h1,
-    .certificates h1,
-    .tech-skills h1,
-    .soft-skills h1 {
-      position: static;
-      text-align: center;
-}
-    .certificate p {
-      font-size: 18px;
-      margin: 5% auto;
-      text-align: center;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .certificate img {
+    max-width: 250px;
+  }
+
+  .skill {
+    margin: auto;
+  }
 }
 
-    .skill {
-      margin: auto;
-      grid: "one" auto "two" auto "three" auto "four" auto "five" auto "six" auto;
-}
-  
-    .skill span {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: center;
-      margin: 10%;
-}
+@media all and (max-width: 576px) {
+  .education .summary,
+  .experience .summary,
+  .bootcamp .summary {
+    text-align: center;
+  }
 
-    .skill p {
-      margin: 20px;
-}
+  .education h1,
+  .experience h1,
+  .bootcamp h1,
+  .certificates h1,
+  .tech-skills h1,
+  .soft-skills h1 {
+    position: static;
+    text-align: center;
+  }
+  .certificate p {
+    font-size: 18px;
+    margin: 5% auto;
+    text-align: center;
+  }
+
+  .tech-skills.skill {
+    margin: auto;
+    grid: "one two" auto "three three" auto "four five" auto "six six" auto "seven eight" auto;
+  }
+
+  .skill span {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10%;
+  }
+
+  .skill p {
+    margin: 20px;
+  }
 }
